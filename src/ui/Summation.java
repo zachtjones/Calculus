@@ -51,22 +51,10 @@ public class Summation {
 		txtrResult.append("S" + CalculusMain.subscript("100") + " =" + partialsum(start, start+100, o) + "\n");
 		
 		txtrResult.append("S" + CalculusMain.subscript("1000") + " =" + partialsum(start, start+1000, o) + "\n");
-		
-		tests(o, txtrResult, start);
-		
+				
 		d.setVisible(true);
 	}
-	/**
-	 * Does the tests on a summation to determine if the summation converges/diverges.
-	 * Tests are:
-	 * 
-	 * @param o The operation (function) to test
-	 * @param txt The textarea to display the results
-	 * @param start The start of the summation (end is ∞)
-	 */
-	public static void tests(Operation o, JTextArea txt, int start){
-		
-	}
+	
 	/**
 	 * Computes a partial sum of a function o from start to end (inclusive). 
 	 * If (end - start) is very large, this may take a long time to compute
